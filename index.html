@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Eden</title>
+    <link rel="icon" href="img/h.ico ">
+    <link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <style>
+        .body{
+            background-color: #ededed;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .w{
+            width: 1060px;
+        }
+        .hide{
+            display: none;
+        }
+        .header{
+            height: 60px;
+        }
+        .clearfix:after{
+            content: "";
+            visibility: hidden;
+            clear: both;
+            height: 0;
+        }
+        .header .pg-header{
+            height: 60px;
+            width: 100%;
+            background-color: #8ab3d2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .header .pg-header .content{
+            /*background-color: #dddddd;*/
+            margin: 0 auto;
+            height: 60px;
+        }
+        .header .pg-header .content .header-content-left{
+            line-height: 60px;
+            text-align: center;
+            width: 180px;
+        }
+        .header .pg-header .content .header-content-left img{
+            float: left;
+        }
+        .header .pg-header .content .header-content-left span{
+            float: left;
+            color: white;
+            font-size: 20px;
+        }
+        .header .pg-header .content .header-content-right{
+            float: right;
+            font-size: 17px;
+        }
+        .header .pg-header .content .header-content-right a{
+            display: inline-block;
+            width: 78px;
+            line-height: 60px;
+            text-align: center;
+            color: white;
+            margin-left: 2px;
+            text-decoration:none;
+        }
+        .header .pg-header .content .header-content-right .r-1{
+            color:#ffae4e;
+            background-color: #5390bf;
+        }
+
+            /*页面一*/
+        .body .pg-body{
+            margin: 0 auto;
+        }
+        .body .pg-body .content-itme{
+            height: 600px;
+        }
+         .body .pg-body .hom{
+             background-color: white;
+         }
+        .body .pg-body .hom h1{
+            padding: 200px 0 40px 0;
+            text-align: center;
+            font-family: 宋体;
+            font-size: 60px;
+            color: #5692bf;
+         }
+        .body .pg-body .hom .content-content p{
+            text-align: center;
+            padding-bottom: 10px;
+            color: #8ab3d2;
+        }
+
+           /*页面二*/
+        .body .pg-body .soon{
+            background-color: white;
+        }
+
+        .body .pg-body .soon h2{
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 4px;
+            font-family: 宋体;
+            font-size: 30px;
+            color: #5692bf;
+        }
+        .body .pg-body .soon hr{
+             border: 0;
+             height: 4px;
+             background-color: #ffae4e;
+             width: 80px;
+             margin: 0 auto;
+         }
+        .body .pg-body .soon .content-content{
+            width: 800px;
+            padding-top: 100px;
+            margin: 0 auto;
+        }
+        .body .pg-body .soon .content-content p{
+            padding-bottom: 40px;
+            color: #8ab3d5;
+        }
+
+        /*页面三*/
+        .body .pg-body .orientation .orientation-c p{
+            text-align: center;
+        }
+        /*页面四*/
+        .body .pg-body .soon .content-content .H1{
+            width: 198px;
+            height: 300px;
+            border: 1px solid greenyellow;
+            float: left;
+            text-align: center;
+        }
+        .body .pg-body .soon .content-content .H1 p{
+            padding-bottom: 0; !important;
+            display: inline-block;
+            line-height: 300px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .body .pg-body .soon .content-content .H1 li{
+            list-style: none;
+            float: left;
+            text-align: left;
+        }
+        /*页面五*/
+        .body .pg-body .soon .content-content .contact-information{
+            height: 240px;
+            border: 1px solid royalblue;
+        }
+        .body .pg-body .soon .content-content .contact-information .information-vx{
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid greenyellow;
+            margin: 19px 40px 19px 150px;
+        }
+
+        .body .pg-body .soon .content-content .contact-information .information-other ul li{
+            margin: 43px 0 30px 10px;
+        }
+
+        .goTop .top{
+            position: fixed;
+            right: 30px;
+            bottom: 20px;
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            text-align: center;
+            z-index: 1;
+        }
+        .goTop .top .mask{
+            width: 64px;
+            height: 64px;
+            background:rgba(0,0,0,.1);
+            z-index: 2;
+        }
+        .goTop .top .pic{
+            position: absolute;!important;
+            top: 0;!important;
+            left: 11px;!important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="pg-header ">
+            <div class="w content">
+                <div class="header-content-left">
+                    <!--<img src="img/tatle.jpg">-->
+                    <span>吴昆霖/Eden</span>
+                </div>
+
+                <div class="header-content-right">
+                    <a href="javascript:;" astrid="0" class="page-hom">首页</a>
+                    <a href="javascript:;" astrid="1">关于我</a>
+                    <a href="javascript:;" astrid="2">求职意向</a>
+                    <a href="javascript:;" astrid="3">技术掌握</a>
+                    <a href="javascript:;" astrid="4">我的经历</a>
+                    <a href="javascript:;" astrid="5">联系我</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="pg-body w">
+            <div class="content-itme hom " eden="0">
+                <h1>Now is the time to change it</h1>
+                <div class="content-content">
+                    <p>您好世界</p>
+                    <p>相随 Sincerity, 生生世世</p>
+                    <p>已有的时候必在有，已行的事必在行，日光之下并无新事</p>
+                </div>
+            </div>
+            <div class="content-itme soon aboutme" eden="1">
+                <h2>关于我</h2>
+                <hr>
+                <div class="content-content">
+                    <p>
+                        吴昆霖 | 您也可以叫我Eden，20岁，来自四川仪陇县。现：就读于四川托普信息技术职业学院，计算机系，信息安全与管理的准大二学生。前端是一门通过技术改善用户体验的行业，同时结合后台开发技术模拟整体效果。虽在计算机系，但本专业课程目前尚未接触前端内容，根据自己对计算机的兴趣爱好不断努力向web方向学习。
+                    </p>
+                    <p>师傅领进门修行靠个人--完全依靠自学的我对于前端方面的理解肤浅，希望更多的学习来充实自己对于技术的理解。代码改变世界早已在我的头脑生根发芽
+                    </p>
+                    <p>不足：自己很笨。其实笨了一点点对于我来说也不是啥了，我愿意在时间上面补回来。尽力做一只先飞的笨鸟
+                    </p>
+                    <p>
+                        优势：夜猫子一个，对于出现的问题，就算是熬夜到通宵，勇于把绊脚石变成垫脚石。时刻谨记学习对于自己精神上面的充实。
+                    </p>
+                </div>
+            </div>
+            <div class="content-itme soon orientation" eden="2">
+                <h2>求职意向</h2>
+                <hr>
+                <div class="content-content orientation-c">
+                    <p>初次接触，对于这世界真是知道甚少，更多的我愿意边做变学</p>
+                    <p>明天谱写</p>
+                </div>
+            </div>
+            <div class="content-itme soon technology" eden="3">
+                <h2>技术掌握</h2>
+                <hr>
+                <div class="content-content">
+                    <div class="H1">
+                        <p>HTML</p>
+                        <ul class="hide">
+                            <li>前端基本功</li>
+                            <li>熟悉HTML熟悉盒模型和各类布局方式、能够根据设计图实现页面布局和交互效果</li>
+                        </ul>
+                    </div>
+                    <div class="H1">
+                        <p>CSS</p>
+                        <ul class="hide">
+                            <li>熟悉CSS</li>
+                            <li>了解过bootstrap、font-awesome等</li>
+                        </ul>
+                    </div>
+                    <div class="H1">
+                        <p>JavaScript</p>
+                        <ul class="hide">
+                            <li>熟悉JavaScript</li>
+                            <li>熟悉jQuery</li>
+                            <li>熟悉ajax</li>
+                        </ul>
+                    </div>
+                    <div class="H1">
+                        <p>Future</p>
+                        <ul class="hide">
+                            <li>学习关于后端的框架</li>
+                            <li>more....</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-itme soon experience" eden="4">
+                 <h2>我的经历</h2>
+                <hr>
+                <div class="content-content">
+                    <p>经历目前谈不上。希望未来的故事与@Boss谱写</p>
+                    <p>暂时附上学习笔记，后续搭建自己的博客主站。笔记一律回顾写上</p>
+                    <p><a href="https://pan.baidu.com/s/1-nk9VvQV9zB0Mb-jk7WHrw" target="_blank">笔记一</a></p>
+                    <p><a href="https://pan.baidu.com/s/1_PFZJKrxYE7dpVAWyKStAg" target="_blank">笔记二</a></p>
+                    <p><a href="https://pan.baidu.com/s/10S7DCeDkLiAkrfUXXJscvA" target="_blank">笔记三</a></p>
+                    <p>期待您@我offer</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="content-itme soon contact" eden="5">
+                <h2>联系我</h2>
+                <hr>
+                <div class="content-content">
+                    <div class="contact-information">
+                        <div class="information-vx">
+                            <img src="img/information-vx.jpg">
+                        </div>
+                        <div class="information-other">
+                            <ul>
+                                <li class="fa fa-mobile fa-3x">
+                                <span>17602830640</span></li>
+                                <li class="fa fa-envelope-o fa-2x">
+                                <span>edenwu@126.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goTop hide">
+            <div class="top">
+                <div class="mask"></div>
+                <div class="fa fa-angle-double-up fa-4x clearfix pic"></div>
+            </div>
+        </div>
+    <script>
+        $(function () {
+            // -----------------heard-right// 鼠标header点击事件-----------------
+            $(".header-content-right").children().click(function () {
+                $(this).addClass("r-1").siblings().removeClass("r-1");
+                var eden = $(this).attr("astrid");
+                var new_eden = "[eden="+eden+"]";
+                var height_den = $(new_eden).offset().top - $(".header").height() + 1;
+                document.documentElement.scrollTop = height_den
+            });
+
+            // -----------------技术掌握-----------------
+            $(".H1").hover(function () {
+                $(this).children(":first-child").css("line-height", "40px");
+                $(this).children(":last-child").removeClass("hide");
+            }, function () {
+                $(this).children(":first-child").css("line-height", "300px");
+                $(this).children(":last-child").addClass("hide");
+            });
+
+            window.onscroll = function () {
+                var scrolLiveHeight = $(window).scrollTop();
+                var headerHeight = $(".header").height();
+                var scrolOverHeight = $(window).height();
+                var AllHeight = $(document).height();
+                console.log(scrolLiveHeight, headerHeight, scrolOverHeight, AllHeight);
+
+                // -----------------goBackTop-----------------
+                if (scrolLiveHeight > headerHeight) {
+                    $(".goTop").removeClass("hide")
+                    $(".goTop").on("click",function () {
+                        document.documentElement.scrollTop = 0;
+                        $(".page-hom").addClass("r-1").siblings().removeClass("r-1")
+                    })
+                } else {
+                    $(".goTop").addClass("hide")
+                }
+                // -----------------鼠标滚动事件-----------------
+                if (AllHeight === scrolLiveHeight+scrolOverHeight){
+                    $(".header-content-right").children(":last").addClass("r-1").siblings().removeClass("r-1");
+                    return
+                }
+                $(".pg-body").children().each(function () {
+                var wx = $(this).offset().top;
+                var astrid = $(this).attr("eden");
+                var new_astrid = "[astrid="+astrid+"]";
+                if (scrolLiveHeight>wx-headerHeight){
+                    $(new_astrid).addClass("r-1").siblings().removeClass("r-1")
+                }
+                // -----------------首页点击事件-----------------
+                $(".page-hom").click(function () {
+                document.documentElement.scrollTop = 0;
+                })
+            });
+
+            }
+        })
+
+    </script>
+</body>
+</html>
